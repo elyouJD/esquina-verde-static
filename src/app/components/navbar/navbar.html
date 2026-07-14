@@ -4,7 +4,12 @@
     <span>Esquina Verde</span>
   </div>
 
-  <nav>
+  <!-- Hamburger -->
+  <button class="hamburger" (click)="toggleMenu()">
+    <i class="fas" [class.fa-bars]="!menuOpen" [class.fa-times]="menuOpen"></i>
+  </button>
+
+  <nav [class.open]="menuOpen">
     <button [class.active]="activeSection === 'inicio'" (click)="scrollTo('inicio')">Inicio</button>
 
     <button [class.active]="activeSection === 'servicios'" (click)="scrollTo('servicios')">
@@ -18,7 +23,11 @@
     <button [class.active]="activeSection === 'contact'" (click)="scrollTo('contact')">
       Contacto
     </button>
+
+    <!-- Button visible only on mobile -->
+    <button class="mobile-btn" (click)="scrollTo('contact')">Solicitar Presupuesto</button>
   </nav>
 
-  <button class="btn" (click)="scrollTo('contact')">Solicitar Presupuesto</button>
+  <!-- Desktop button -->
+  <button class="btn desktop-btn" (click)="scrollTo('contact')">Solicitar Presupuesto</button>
 </header>

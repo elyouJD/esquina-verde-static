@@ -9,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class Navbar {
   activeSection = 'inicio';
+  menuOpen = false;
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu(): void {
+    this.menuOpen = false;
+  }
 
   scrollTo(id: string): void {
     this.activeSection = id;
@@ -21,5 +30,8 @@ export class Navbar {
         block: 'start',
       });
     }
+
+    // Ysed l-menu mlli ykhtar chi lien f mobile
+    this.closeMenu();
   }
 }
