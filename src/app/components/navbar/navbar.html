@@ -1,0 +1,24 @@
+<header class="navbar">
+  <div class="logo" (click)="scrollTo('inicio')">
+    <img src="/images/logo.png" alt="Esquina Verde Logo" />
+    <span>Esquina Verde</span>
+  </div>
+
+  <nav>
+    <button [class.active]="activeSection === 'inicio'" (click)="scrollTo('inicio')">Inicio</button>
+
+    <button [class.active]="activeSection === 'servicios'" (click)="scrollTo('servicios')">
+      Servicios
+    </button>
+
+    <button [class.active]="activeSection === 'gallery'" (click)="scrollTo('gallery')">
+      Galería
+    </button>
+
+    <button [class.active]="activeSection === 'contact'" (click)="scrollTo('contact')">
+      Contacto
+    </button>
+  </nav>
+
+  <button class="btn" (click)="scrollTo('contact')">Solicitar Presupuesto</button>
+</header>

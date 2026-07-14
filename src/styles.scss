@@ -1,0 +1,106 @@
+/* ================================
+   Google Font
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+/* ================================
+   Font Awesome
+================================ */
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* ================================
+   Reset
+================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   Root
+================================ */
+
+:root {
+  --primary: #23492e;
+  --secondary: #43a047;
+  --accent: #7ed957;
+
+  --background: #f8faf8;
+
+  --text: #1e1e1e;
+
+  --gray: #666;
+
+  --white: #ffffff;
+
+  --border: #e8e8e8;
+
+  --radius: 20px;
+
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   Global
+================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+
+  color: var(--text);
+
+  background: var(--white);
+
+  overflow-x: hidden;
+
+  line-height: 1.6;
+}
+
+/* ================================
+   Images
+================================ */
+
+img {
+  display: block;
+
+  max-width: 100%;
+}
+
+/* ================================
+   Links
+================================ */
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+/* ================================
+   Lists
+================================ */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ================================
+   Buttons
+================================ */
+
+button {
+  font-family: inherit;
+
+  cursor: pointer;
+}
